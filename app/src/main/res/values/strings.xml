@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">MobileAppFinal</string>
+    <string name="app_name">Weighted Grade Average Calculator</string>
+
+    <string name="title">Name</string>
+    <string name="grade">Grade</string>
+    <string name="weight">Percent</string>
+
+    <string name="next">Next</string>
+    <string name="calc">Calculate</string>
+    <string name="reset">Reset</string>
+
+    <string name="avg">Course Grade:</string>
 </resources>
