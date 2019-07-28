@@ -54,7 +54,7 @@ public class MainActivity2 extends AppCompatActivity
         String N9 = bundle.getString("n9");
         String N10 = bundle.getString("n10");
 
-        Name1.setText(String.format("%.2f",N1));
+        /*Name1.setText(String.format("%.2f",N1));
         Name2.setText(String.format("%.2f",N2));
         Name3.setText(String.format("%.2f",N3));
         Name4.setText(String.format("%.2f",N4));
@@ -63,7 +63,18 @@ public class MainActivity2 extends AppCompatActivity
         Name7.setText(String.format("%.2f",N7));
         Name8.setText(String.format("%.2f",N8));
         Name9.setText(String.format("%.2f",N9));
-        Name10.setText(String.format("%.2f",N10));
+        Name10.setText(String.format("%.2f",N10));*/
+
+        Name1.setText(N1);
+        Name2.setText(N2);
+        Name3.setText(N3);
+        Name4.setText(N4);
+        Name5.setText(N5);
+        Name6.setText(N6);
+        Name7.setText(N7);
+        Name8.setText(N8);
+        Name9.setText(N9);
+        Name10.setText(N10);
 
         w1 = bundle.getString("w1");
         w2 = bundle.getString("w2");
@@ -89,7 +100,7 @@ public class MainActivity2 extends AppCompatActivity
                 EditText grade8 = findViewById(R.id.grade8);
                 EditText grade9 = findViewById(R.id.grade9);
                 EditText grade10 = findViewById(R.id.grade10);
-                TextView grade = findViewById(R.id.grade);
+                EditText result = findViewById(R.id.Result);
 
                 String g1 = grade1.getText().toString();
                 String g2 = grade2.getText().toString();
@@ -127,62 +138,62 @@ public class MainActivity2 extends AppCompatActivity
                 double average;
                 if (grade1.getText().equals(""))
                 {
-                    grade.setText(Double.toString(0));
+                    result.setText(Double.toString(0));
                 }
                 else if (grade2.getText().equals(""))
                 {
                     average = W1 * G1 / 100;
-                    grade.setText(Double.toString(average));
+                    result.setText(Double.toString(average));
                 }
                 else if (grade3.getText().equals(""))
                 {
                     average = W1 * G1 / 100 + W2 * G2 / 100;
-                    grade.setText(Double.toString(average));
+                    result.setText(Double.toString(average));
                 }
                 else if (grade4.getText().equals(""))
                 {
                     average = W1 * G1 / 100 + W2 * G2 / 100 + W3 * G3 / 100;
-                    grade.setText(Double.toString(average));
+                    result.setText(Double.toString(average));
                 }
                 else if (grade5.getText().equals(""))
                 {
                     average = W1 * G1 / 100 + W2 * G2 / 100 + W3 * G3 / 100 + W4 * G4 / 100;
-                    grade.setText(Double.toString(average));
+                    result.setText(Double.toString(average));
                 }
                 else if (grade6.getText().equals(""))
                 {
                     average = W1 * G1 / 100 + W2 * G2 / 100 + W3 * G3 / 100 + W4 * G4 / 100 + W5 * G5 / 100;
-                    grade.setText(Double.toString(average));
+                    result.setText(Double.toString(average));
                 }
                 else if (grade7.getText().equals(""))
                 {
                     average = W1 * G1 / 100 + W2 * G2 / 100 + W3 * G3 / 100 + W4 * G4 / 100 + W5 * G5 / 100 + W6 * G6 / 100;
-                    grade.setText(Double.toString(average));
+                    result.setText(Double.toString(average));
                 }
                 else if (grade8.getText().equals(""))
                 {
                     average = W1 * G1 / 100 + W2 * G2 / 100 + W3 * G3 / 100 + W4 * G4 / 100 + W5 * G5 / 100 + W6 * G6 / 100
                             + W7 * G7 / 100;
-                    grade.setText(Double.toString(average));
+                    result.setText(Double.toString(average));
                 }
                 else if (grade9.getText().equals(""))
                 {
                     average = W1 * G1 / 100 + W2 * G2 / 100 + W3 * G3 / 100 + W4 * G4 / 100 + W5 * G5 / 100 + W6 * G6 / 100
                             + W7 * G7 / 100 + W8 * G8 / 100;
-                    grade.setText(Double.toString(average));
+                    result.setText(Double.toString(average));
                 }
                 else if (grade10.getText().equals(""))
                 {
                     average = W1 * G1 / 100 + W2 * G2 / 100 + W3 * G3 / 100 + W4 * G4 / 100 + W5 * G5 / 100 + W6 * G6 / 100
                             + W7 * G7 / 100 + W8 * G8 / 100 + W9 * G9 / 100;
-                    grade.setText(Double.toString(average));
+                    result.setText(Double.toString(average));
                 }
 
                 else
                 {
                     average = W1 * G1 / 100 + W2 * G2 / 100 + W3 * G3 / 100 + W4 * G4 / 100 + W5 * G5 / 100 + W6 * G6 / 100
                             + W7 * G7 / 100 + W8 * G8 / 100 + W9 * G10 / 100 + W10 * G10 / 100;
-                    grade.setText(Double.toString(average));
+                    result.setText(Double.toString(average));
                 }
             }
         });
