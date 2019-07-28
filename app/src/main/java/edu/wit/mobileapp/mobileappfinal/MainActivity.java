@@ -80,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
                 String n10 = name10.getText().toString();
 
                 Bundle bundle = new Bundle();
-
                 bundle.putString("n1", n1);
                 bundle.putString("n2", n2);
                 bundle.putString("n3", n3);
@@ -91,6 +90,17 @@ public class MainActivity extends AppCompatActivity {
                 bundle.putString("n8", n8);
                 bundle.putString("n9", n9);
                 bundle.putString("n10", n10);
+
+                bundle.putDouble("W1", W1);
+                bundle.putDouble("W2", W2);
+                bundle.putDouble("W3", W3);
+                bundle.putDouble("W4", W4);
+                bundle.putDouble("W5", W5);
+                bundle.putDouble("W6", W6);
+                bundle.putDouble("W7", W7);
+                bundle.putDouble("W8", W8);
+                bundle.putDouble("W9", W9);
+                bundle.putDouble("W10", W10);
 
                 intent.putExtras(bundle);
                 startActivity(intent);
@@ -112,7 +122,6 @@ public class MainActivity extends AppCompatActivity {
                 EditText weight8 = findViewById(R.id.weight8);
                 EditText weight9 = findViewById(R.id.weight9);
                 EditText weight10 = findViewById(R.id.weight10);
-
 
                 EditText name1 = findViewById(R.id.name1);
                 EditText name2 = findViewById(R.id.name2);
