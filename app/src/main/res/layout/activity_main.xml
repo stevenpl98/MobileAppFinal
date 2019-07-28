@@ -265,7 +265,7 @@
         app:layout_constraintVertical_bias="0.32" />
 
     <EditText
-        android:id="@+id/name4"
+        android:id="@+id/Name4"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -301,7 +301,7 @@
         app:layout_constraintVertical_bias="0.564" />
 
     <EditText
-        android:id="@+id/name5"
+        android:id="@+id/Name5"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
