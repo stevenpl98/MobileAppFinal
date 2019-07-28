@@ -7,8 +7,25 @@
     tools:context=".MainActivity2">
 
     <EditText
+        android:id="@+id/Result"
+        android:layout_width="50dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943" />
+
+    <EditText
         android:id="@+id/Name1"
-        android:layout_width="260dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -26,7 +43,7 @@
 
     <EditText
         android:id="@+id/Name2"
-        android:layout_width="260dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -44,7 +61,7 @@
 
     <EditText
         android:id="@+id/Name3"
-        android:layout_width="260dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -62,7 +79,7 @@
 
     <EditText
         android:id="@+id/Name4"
-        android:layout_width="260dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -80,7 +97,7 @@
 
     <EditText
         android:id="@+id/Name5"
-        android:layout_width="260dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -98,7 +115,7 @@
 
     <EditText
         android:id="@+id/Name6"
-        android:layout_width="260dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -116,7 +133,7 @@
 
     <EditText
         android:id="@+id/Name7"
-        android:layout_width="260dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -134,7 +151,7 @@
 
     <EditText
         android:id="@+id/Name8"
-        android:layout_width="260dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -152,7 +169,7 @@
 
     <EditText
         android:id="@+id/Name9"
-        android:layout_width="260dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -170,7 +187,7 @@
 
     <EditText
         android:id="@+id/Name10"
-        android:layout_width="260dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -196,27 +213,10 @@
         android:text="@string/title"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.051" />
-
-    <EditText
-        android:id="@+id/Result"
-        android:layout_width="74dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.931"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.943" />
 
     <TextView
         android:id="@+id/grade"
@@ -228,7 +228,7 @@
         android:text="@string/grade"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintHorizontal_bias="0.879"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.051" />
@@ -251,7 +251,7 @@
 
     <EditText
         android:id="@+id/grade1"
-        android:layout_width="74dp"
+        android:layout_width="50dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -268,7 +268,7 @@
 
     <EditText
         android:id="@+id/grade2"
-        android:layout_width="74dp"
+        android:layout_width="50dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -285,7 +285,7 @@
 
     <EditText
         android:id="@+id/grade3"
-        android:layout_width="74dp"
+        android:layout_width="50dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -302,7 +302,7 @@
 
     <EditText
         android:id="@+id/grade4"
-        android:layout_width="74dp"
+        android:layout_width="50dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -319,7 +319,7 @@
 
     <EditText
         android:id="@+id/grade5"
-        android:layout_width="74dp"
+        android:layout_width="50dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -336,7 +336,7 @@
 
     <EditText
         android:id="@+id/grade6"
-        android:layout_width="74dp"
+        android:layout_width="50dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -353,7 +353,7 @@
 
     <EditText
         android:id="@+id/grade7"
-        android:layout_width="74dp"
+        android:layout_width="50dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -370,7 +370,7 @@
 
     <EditText
         android:id="@+id/grade8"
-        android:layout_width="74dp"
+        android:layout_width="50dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -387,7 +387,7 @@
 
     <EditText
         android:id="@+id/grade9"
-        android:layout_width="74dp"
+        android:layout_width="50dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -404,7 +404,7 @@
 
     <EditText
         android:id="@+id/grade10"
-        android:layout_width="74dp"
+        android:layout_width="50dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"

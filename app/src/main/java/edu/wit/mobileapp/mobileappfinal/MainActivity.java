@@ -8,22 +8,29 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //button definitions
         Button reset = findViewById(R.id.reset);
-
         Button next = findViewById(R.id.next);
 
-        next.setOnClickListener(new View.OnClickListener() {
+        //method used to go to next activity
+        next.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, MainActivity2.class);
+
+                //category weight percentages edittext fields set
                 EditText weight1 = findViewById(R.id.weight1);
                 EditText weight2 = findViewById(R.id.weight2);
                 EditText weight3 = findViewById(R.id.weight3);
@@ -35,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 EditText weight9 = findViewById(R.id.weight9);
                 EditText weight10 = findViewById(R.id.weight10);
 
+                //category name edittext fields set
                 EditText name1 = findViewById(R.id.name1);
                 EditText name2 = findViewById(R.id.name2);
                 EditText name3 = findViewById(R.id.name3);
@@ -46,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 EditText name9 = findViewById(R.id.name9);
                 EditText name10 = findViewById(R.id.name10);
 
+                //weight percentages converted to string
                 String w1 = weight1.getText().toString();
                 String w2 = weight2.getText().toString();
                 String w3 = weight3.getText().toString();
@@ -57,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 String w9 = weight9.getText().toString();
                 String w10 = weight10.getText().toString();
 
+                //category names converted to string
                 String n1 = name1.getText().toString();
                 String n2 = name2.getText().toString();
                 String n3 = name3.getText().toString();
@@ -68,7 +78,10 @@ public class MainActivity extends AppCompatActivity {
                 String n9 = name9.getText().toString();
                 String n10 = name10.getText().toString();
 
+                //bundling takes place
                 Bundle bundle = new Bundle();
+
+                //bundling names
                 bundle.putString("n1", n1);
                 bundle.putString("n2", n2);
                 bundle.putString("n3", n3);
@@ -80,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 bundle.putString("n9", n9);
                 bundle.putString("n10", n10);
 
+                //bundling weight percentages
                 bundle.putString("w1", w1);
                 bundle.putString("w2", w2);
                 bundle.putString("w3", w3);
@@ -97,10 +111,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        reset.setOnClickListener(new View.OnClickListener() {
+        //method used to reset
+        reset.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
-
+            public void onClick(View v)
+            {
+                //category weight percentages edittext fields set
                 EditText weight1 = findViewById(R.id.weight1);
                 EditText weight2 = findViewById(R.id.weight2);
                 EditText weight3 = findViewById(R.id.weight3);
@@ -112,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
                 EditText weight9 = findViewById(R.id.weight9);
                 EditText weight10 = findViewById(R.id.weight10);
 
+                //category name edittext fields set
                 EditText name1 = findViewById(R.id.name1);
                 EditText name2 = findViewById(R.id.name2);
                 EditText name3 = findViewById(R.id.name3);
