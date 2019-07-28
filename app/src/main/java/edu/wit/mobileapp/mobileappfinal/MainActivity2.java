@@ -13,17 +13,16 @@ import org.w3c.dom.Text;
 public class MainActivity2 extends AppCompatActivity
 {
 
-    static double W1;
-    static double W2;
-    static double W3;
-    static double W4;
-    static double W5;
-    static double W6;
-    static double W7;
-    static double W8;
-    static double W9;
-    static double W10;
-
+    static String w1;
+    static String w2;
+    static String w3;
+    static String w4;
+    static String w5;
+    static String w6;
+    static String w7;
+    static String w8;
+    static String w9;
+    static String w10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -66,16 +65,16 @@ public class MainActivity2 extends AppCompatActivity
         Name9.setText(String.format("%.2f",N9));
         Name10.setText(String.format("%.2f",N10));
 
-        W1 = bundle.getDouble("W1");
-        W2 = bundle.getDouble("W2");
-        W3 = bundle.getDouble("W3");
-        W4 = bundle.getDouble("W4");
-        W5 = bundle.getDouble("W5");
-        W6 = bundle.getDouble("W6");
-        W7 = bundle.getDouble("W7");
-        W8 = bundle.getDouble("W8");
-        W9 = bundle.getDouble("W9");
-        W10 = bundle.getDouble("W10");
+        w1 = bundle.getString("w1");
+        w2 = bundle.getString("w2");
+        w3 = bundle.getString("w3");
+        w4 = bundle.getString("w4");
+        w5 = bundle.getString("w5");
+        w6 = bundle.getString("w6");
+        w7 = bundle.getString("w7");
+        w8 = bundle.getString("w8");
+        w9 = bundle.getString("w9");
+        w10 = bundle.getString("w10");
 
        calculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,6 +112,17 @@ public class MainActivity2 extends AppCompatActivity
                 double G8 = Double.parseDouble(g8);
                 double G9 = Double.parseDouble(g9);
                 double G10 = Double.parseDouble(g10);
+
+                double W1 = Double.parseDouble(w1);
+                double W2 = Double.parseDouble(w2);
+                double W3 = Double.parseDouble(w3);
+                double W4 = Double.parseDouble(w4);
+                double W5 = Double.parseDouble(w5);
+                double W6 = Double.parseDouble(w6);
+                double W7 = Double.parseDouble(w7);
+                double W8 = Double.parseDouble(w8);
+                double W9 = Double.parseDouble(w9);
+                double W10 = Double.parseDouble(w10);
 
                 double average;
                 if (grade1.getText().equals(""))

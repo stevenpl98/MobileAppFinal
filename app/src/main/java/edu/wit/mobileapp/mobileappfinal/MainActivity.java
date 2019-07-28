@@ -57,17 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 String w9 = weight9.getText().toString();
                 String w10 = weight10.getText().toString();
 
-                double W1 = Double.parseDouble(w1);
-                double W2 = Double.parseDouble(w2);
-                double W3 = Double.parseDouble(w3);
-                double W4 = Double.parseDouble(w4);
-                double W5 = Double.parseDouble(w5);
-                double W6 = Double.parseDouble(w6);
-                double W7 = Double.parseDouble(w7);
-                double W8 = Double.parseDouble(w8);
-                double W9 = Double.parseDouble(w9);
-                double W10 = Double.parseDouble(w10);
-
                 String n1 = name1.getText().toString();
                 String n2 = name2.getText().toString();
                 String n3 = name3.getText().toString();
@@ -91,16 +80,16 @@ public class MainActivity extends AppCompatActivity {
                 bundle.putString("n9", n9);
                 bundle.putString("n10", n10);
 
-                bundle.putDouble("W1", W1);
-                bundle.putDouble("W2", W2);
-                bundle.putDouble("W3", W3);
-                bundle.putDouble("W4", W4);
-                bundle.putDouble("W5", W5);
-                bundle.putDouble("W6", W6);
-                bundle.putDouble("W7", W7);
-                bundle.putDouble("W8", W8);
-                bundle.putDouble("W9", W9);
-                bundle.putDouble("W10", W10);
+                bundle.putString("w1", w1);
+                bundle.putString("w2", w2);
+                bundle.putString("w3", w3);
+                bundle.putString("w4", w4);
+                bundle.putString("w5", w5);
+                bundle.putString("w6", w6);
+                bundle.putString("w7", w7);
+                bundle.putString("w8", w8);
+                bundle.putString("w9", w9);
+                bundle.putString("w10", w10);
 
                 intent.putExtras(bundle);
                 startActivity(intent);
