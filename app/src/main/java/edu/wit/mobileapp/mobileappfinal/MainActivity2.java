@@ -41,23 +41,14 @@ public class MainActivity2 extends AppCompatActivity
         EditText Name10 = findViewById(R.id.Name10);
 
         String N1 = bundle.getString("n1");
-        Name1.setText(N1);
         String N2 = bundle.getString("n2");
-        Name1.setText(N1);
         String N3 = bundle.getString("n3");
-        Name1.setText(N1);
         String N4 = bundle.getString("n4");
-        Name1.setText(N1);
         String N5 = bundle.getString("n5");
-        Name1.setText(N1);
         String N6 = bundle.getString("n6");
-        Name1.setText(N1);
         String N7 = bundle.getString("n7");
-        Name1.setText(N1);
         String N8 = bundle.getString("n8");
-        Name1.setText(N1);
         String N9 = bundle.getString("n9");
-        Name1.setText(N1);
         String N10 = bundle.getString("n10");
 
         Name1.setText(N1);
@@ -71,12 +62,11 @@ public class MainActivity2 extends AppCompatActivity
         Name9.setText(N9);
         Name10.setText(N10);
 
-
-        calculate.setOnClickListener(new View.OnClickListener() {
+       /* calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
             }
-        });
+        }); */
     }
 }
